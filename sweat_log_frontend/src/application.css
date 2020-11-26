@@ -1,0 +1,56 @@
+html {
+  background-color: tomato;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  
+  .title {
+    display: inline-block;
+    color: #f8b345;
+    font-size: 65px;
+  }
+  
+  #workout_form {
+    text-align: center;
+    font-size: 0px;
+  }
+  
+  #workout_input {
+    display: inline-block;
+    background-color: coral;
+    padding: 1em;
+    font-size: 24px;
+    border: none;
+  }
+  
+  .workout_submit {
+    display: inline-block;
+    padding: 1em;
+    font-size: 24px;
+    margin: 0;
+    background-color: coral;
+    color: #fff;
+    border: none;
+  }
+  .workout_submit:hover {
+    background-color: hotpink;
+  }
+  
+  #container {
+    padding: 1em;
+    width: 750px;
+    display: inline-block;
+    margin: 2em;
+    border: 1px solid black;
+  }
+  
+  .workout {
+    padding: 1em;
+    margin: 1em;
+    font-size: 24px;
+    background-color: hotpink;
+    border-radius: 12px;
+  }
