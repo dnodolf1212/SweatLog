@@ -564,3 +564,113 @@ Processing by Api::V1::UsersController#index as */*
 Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.6ms | Allocations: 3610)
 
 
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:00:36 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 1.9ms | Allocations: 3610)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:01:15 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.7ms | Allocations: 3514)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:04:40 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (1.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 2.3ms | Allocations: 3514)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:04:53 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (1.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 68ms (Views: 63.6ms | ActiveRecord: 3.7ms | Allocations: 3498)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:05:59 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.4ms | Allocations: 3495)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:09:37 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.6ms | Allocations: 3495)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:10:19 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 6.7ms | ActiveRecord: 10.2ms | Allocations: 3495)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:10:29 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 2.4ms | Allocations: 3495)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:10:41 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 2.5ms | Allocations: 3495)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-11-27 19:23:58 -0800
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 2.4ms | Allocations: 3596)
+
+

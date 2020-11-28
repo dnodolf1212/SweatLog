@@ -7,6 +7,10 @@
 //})
 
 const url = "http://localhost:3000/api/v1/users"
-fetch(url)
+fetch(url) 
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(data => data.forEach(user => {
+    console.log(user.username)
+    console.log(user.workouts)
+  }))
+  
