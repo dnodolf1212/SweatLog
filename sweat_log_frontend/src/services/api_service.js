@@ -1,5 +1,5 @@
-class ApiService {
-  constructor(baseURL){
-    this.baseURL = baseURL;
-  }
-}
+//class ApiService {
+//  constructor(baseURL){
+//    this.baseURL = baseURL;
+//  }
+//}
