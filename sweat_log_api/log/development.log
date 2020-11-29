@@ -1202,3 +1202,67 @@ Processing by Api::V1::WorkoutsController#index as */*
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1272)
 
 
+  [1m[36mWorkout Load (15.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 22:57:39 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.9ms | Allocations: 1327)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 22:58:11 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.0ms | Allocations: 1254)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 22:58:20 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1254)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 23:00:48 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1254)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 23:03:18 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.4ms | Allocations: 1257)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 23:24:07 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 1.4ms | Allocations: 1327)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 23:42:46 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.9ms | Allocations: 1327)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 23:43:44 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1254)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-11-28 23:48:38 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (2.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 2.0ms | Allocations: 1254)
+
+
