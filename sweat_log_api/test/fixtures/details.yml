@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  workout_id: 1
+  sets_poses: 1
+  distance: MyString
+  time: MyString
+
+two:
+  workout_id: 1
+  sets_poses: 1
+  distance: MyString
+  time: MyString

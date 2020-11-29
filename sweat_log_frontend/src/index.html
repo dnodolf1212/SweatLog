@@ -8,23 +8,24 @@
  </head>
 <body>
   <div class="wrapper">
-  <h1 class="title">Sweat Log</h1>
-  <form action="localhost:3000/workouts" method="POST" id="workout_form">
-    <input type="text" name="workout[type]" value="WORKOUT" id="workout_input">
-    <input type="submit" value="Submit" class="workout_submit">
-  </form>
-  <div id="container">
-    <div class="workout">
-      <p>Yoga</p>
-      <p>Date will be present on DOMContentLoaded??</p>
-      <p><button>Sets/Reps/Laps --></button> produce a field on click??</p>
-      <p><button>Poses</button></p>
-      <p><button>Total Time</button></p>
-      <p><button>Log It</button>will create this element with input information</p>
+    <h1 class="title">Sweat Log</h1>
+    <form action="localhost:3000/api/v1/workouts" method="POST" id="workout_form">
+      <input type="text" name="workout[type]" value="WORKOUT" id="workout_input">
+      <input type="submit" value="Submit" class="workout_submit">
+    </form>
+    <div id="container">
+      <div class="workout">
+        <p>Yoga</p>
+        <p>Date will be present on DOMContentLoaded??</p>
+        <p><button>Sets/Reps/Laps --></button> produce a field on click??</p>
+        <p><button>Poses</button></p>
+        <p><button>Total Time</button></p>
+        <p><button>Log It</button>will create this element with input information</p>
+      </div>
     </div>
-  </div>
-  <!-- <script src="services/ApiService.js"></script> -->
-  <script type="application/javascript" src="index.js" chraset="UTF-8"></script>
-  </div>
+  
+<script src="services/ApiService.js"></script>
+<script src="components/WorkoutBoard.js"></script>*
+<script type="application/javascript" src="index.js" chraset="UTF-8"></script>
 </body>
 </html>
