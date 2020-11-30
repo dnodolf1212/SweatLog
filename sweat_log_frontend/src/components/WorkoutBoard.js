@@ -1,8 +1,11 @@
 class WorkoutBoard {
+
+  static container = document.getElementById("container");
+  
   constructor(workout){
     this.workout = workout;
     this.renderWorkout()
-    console.log(this)
+    this.attachEventListener()
   }
 
   static getData(){
@@ -10,17 +13,34 @@ class WorkoutBoard {
       data.forEach(workout => new WorkoutBoard(workout)));
   }
 
+  attachEventListener(){
+    this.board.addEventListener("click", this.handleOnClick)
+  }
+
+  handleOnClick = (event) => {
+    console.log(this);
+    debugger;
+  }
+
   renderWorkout(){
-    div.innerHTML +=
-    ` 
-     <div class="workout">
-      <p>${this.workout.name}</p>
-      <p>Date will be present on DOMContentLoaded??</p>
-      <p><button>Sets/Reps/Laps --></button> produce a field on click??</p>
-      <p><button>Poses</button></p>
-      <p><button>Total Time</button></p>
-      <p><button>Log It</button>will create this element with input information</p>
-     </div>
+    const board = document.createElement("div");
+    board.className = "workout";
+    board.dataset.id = this.workout.id
+    this.board = board; 
+    this.renderInnerHTML()
+    this.constructor.container.append(board);
+  }
+
+  renderInnerHTML(){
+    const {name, rating, id} = this.workout;
+    const currentDate = new Date().toLocaleDateString();
+    this.board.innerHTML =
+    `
+      ${currentDate} 
+      <h2>${name}</h2>
+      <button class="count-btn" data-count-id="${id}">Sets/Poses</button>
+      <button class="time-btn" data-time-id="${id}">Total Time</button>
+      <p>Rating:${rating}</p>
     `
   }
   
