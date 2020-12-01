@@ -18,8 +18,11 @@ class WorkoutBoard {
   }
 
   handleOnClick = (event) => {
-    console.log(this);
-    debugger;
+    if (event.target.className == 'count-btn'){
+      const id = this.board.dataset.id;
+      api.detailCount(id).then()
+      //api.detailTime(id)
+    }
   }
 
   renderWorkout(){

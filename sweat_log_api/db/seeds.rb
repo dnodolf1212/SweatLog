@@ -34,6 +34,15 @@ workouts = [
   }
 ]
 
+details = [
+  {
+    
+  }
+]
+
+workout_choices = []
+
 workouts.each do |workout|
-  Workout.create(name: workout[:name], rating: workout[:rating])
+  workout_choices << Workout.create(name: workout[:name], rating: workout[:rating])
 end
+

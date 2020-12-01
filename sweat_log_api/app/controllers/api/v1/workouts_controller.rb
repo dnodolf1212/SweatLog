@@ -5,4 +5,14 @@ class Api::V1::WorkoutsController < ApplicationController
     render json: @workouts, except: [:created_at, :updated_at]
   end
 
+  def create 
+    @workout = Workout.new()
+  end
+
+  private 
+
+  def workout_params
+    
+  end
+
 end 
