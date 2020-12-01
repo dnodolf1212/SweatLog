@@ -2205,3 +2205,155 @@ Processing by Api::V1::WorkoutsController#index as */*
 Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 1.5ms | Allocations: 7464)
 
 
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:25:43 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.9ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 4.0ms | Allocations: 7546)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:31:20 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.6ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 29.5ms | ActiveRecord: 2.7ms | Allocations: 7445)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:31:36 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 2.2ms | Allocations: 7445)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:34:03 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.7ms | Allocations: 7444)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:34:21 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 1.7ms | Allocations: 7444)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:35:01 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 1.6ms | Allocations: 7447)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:36:38 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 2.4ms | Allocations: 7444)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-01 08:46:34 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 3]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 4]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 5]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 6]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 31.6ms | ActiveRecord: 3.4ms | Allocations: 7546)
+
+

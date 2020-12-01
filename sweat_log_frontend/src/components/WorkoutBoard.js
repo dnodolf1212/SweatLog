@@ -18,10 +18,7 @@ class WorkoutBoard {
   }
 
   handleOnClick = (event) => {
-    if (event.target.className == 'count-btn'){
-      const id = this.board.dataset.id;
-      
-    }
+    console.log(event.target)
   }
 
   renderWorkout(){
@@ -43,7 +40,7 @@ class WorkoutBoard {
       <button class="count-btn" data-count-id="">Sets/Poses</button>
       <button class="time-btn" data-time-id="">Total Time</button>
       <button class="distance-btn" data-distance-id="">Distance</button>
-      <p>Rating:${rating}</p>
+      <p><button class="rating-btn">Rating</button></p>
     `
   }
   

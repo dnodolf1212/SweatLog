@@ -9,13 +9,14 @@
 <body>
   <div class="wrapper">
     <h1 class="title">Sweat Log</h1>
-    
+    <form action="localhost:3000/api/v1/workouts" method="POST" id="workout_form">
+      <input type="text" name="workout[name]" value="WORKOUT" id="workout_input">
+      <input type="submit" value="Submit" class="workout_submit">
+    </form>
     <div id="container">
-      <form class="add-workout-form">
-        <input type="text" name="name" id="">
-      </form>
     </div>
-       
+    
+         
   </div>
   
 <script src="services/ApiService.js"></script>
