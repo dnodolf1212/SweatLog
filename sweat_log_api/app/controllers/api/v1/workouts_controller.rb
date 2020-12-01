@@ -8,6 +8,7 @@ class Api::V1::WorkoutsController < ApplicationController
 
   def create 
     @workout = Workout.create(workout_params)
+    render json: @workout, except: [:created_at, :updated_at], include: [:details]
   end
 
   private 

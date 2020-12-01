@@ -4,8 +4,8 @@ class WorkoutBoard {
   
   constructor(workout){
     this.workout = workout;
-    this.renderWorkout()
-    this.attachEventListener()
+    this.renderWorkout();
+    this.attachEventListener();
   }
 
   static getData(){
@@ -40,7 +40,7 @@ class WorkoutBoard {
       <button class="count-btn" data-count-id="">Sets/Poses</button>
       <button class="time-btn" data-time-id="">Total Time</button>
       <button class="distance-btn" data-distance-id="">Distance</button>
-      <p><button class="rating-btn">Rating</button></p>
+      <p>Rating: ${rating}</p>
     `
   }
   
