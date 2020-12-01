@@ -6,7 +6,7 @@ class Api::V1::WorkoutsController < ApplicationController
   end
 
   def create 
-    @workout = Workout.new()
+    @workout = Workout.new(workout_params)
   end
 
   private 

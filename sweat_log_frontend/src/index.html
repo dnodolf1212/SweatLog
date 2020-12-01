@@ -10,7 +10,7 @@
   <div class="wrapper">
     <h1 class="title">Sweat Log</h1>
     <form action="localhost:3000/api/v1/workouts" method="POST" id="workout_form">
-      <input type="text" name="workout[type]" value="WORKOUT" id="workout_input">
+      <input type="text" name="workout[name]" value="WORKOUT" id="workout_input">
       <input type="submit" value="Submit" class="workout_submit">
     </form>
     <div id="container">
@@ -23,6 +23,7 @@
   
 <script src="services/ApiService.js"></script>
 <script src="components/WorkoutBoard.js"></script>
+
 <script type="application/javascript" src="index.js" chraset="UTF-8"></script>
 </body>
 </html>

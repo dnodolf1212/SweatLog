@@ -20,8 +20,7 @@ class WorkoutBoard {
   handleOnClick = (event) => {
     if (event.target.className == 'count-btn'){
       const id = this.board.dataset.id;
-      api.detailCount(id).then()
-      //api.detailTime(id)
+      
     }
   }
 
