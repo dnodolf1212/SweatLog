@@ -10,19 +10,20 @@
   <div class="wrapper">
     <h1 class="title">Sweat Log</h1>
     <form id="workout_form">
-      <input type="text" name="name" value="LOG A WORKOUT" id="workout_input">
-      <input type="text" name="rating" value="RATE IT!" id="workout_input">
+      <input type="text" name="name" value="LOG A WORKOUT" onfocus="this.value=''" id="workout_input">
+      <input type="text" name="rating" value="RATE IT! 1 - 10"  onfocus="this.value=''" id="workout_input">
       <input type="submit" value="Submit" class="workout_submit">
     </form>
 
     <div id="container">
+      <div class="details"></div>
     </div>
           
   </div>
   
-<script src="services/ApiService.js"></script>
-<script src="components/WorkoutBoard.js"></script>
-<script src="components/WorkoutForm.js"></script>
-<script type="application/javascript" src="index.js" chraset="UTF-8"></script>
+  <script src="services/ApiService.js"></script>
+  <script src="components/WorkoutBoard.js"></script>
+  <script src="components/WorkoutForm.js"></script>
+  <script type="application/javascript" src="index.js" chraset="UTF-8"></script>
 </body>
 </html>

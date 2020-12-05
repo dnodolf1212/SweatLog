@@ -5,7 +5,7 @@ class ApiService {
 
   getAllWorkouts = () => fetch(`${this.baseURL}/workouts`).then(res => res.json());
 
-  addWorkout = (data) => {
+  addWorkout = (data) => { 
     const config = {
       method: "POST",
       headers: {
@@ -14,11 +14,11 @@ class ApiService {
       },
       body: JSON.stringify(data)
     };
-    fetch(`${this.baseURL}/workouts`, config).then(res => res.json());
+    return fetch(`${this.baseURL}/workouts`, config).then(res => res.json());
   };
   
 }
 
-
  
-  
+ 
+   

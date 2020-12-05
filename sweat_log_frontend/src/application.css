@@ -9,9 +9,10 @@ html {
   
   .title {
     display: inline-block;
-    color: #f8b345;
+    color: #ecfc5c;
     font-size: 65px;
-  }
+    text-shadow: 2px 15px 10px rgb(109, 178, 243);
+}
   
   #workout_form {
     text-align: center;
