@@ -16,6 +16,19 @@ class ApiService {
     };
     return fetch(`${this.baseURL}/workouts`, config).then(res => res.json());
   };
+
+  addDetail = (formData) => {
+    const config = {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify(data)
+    };
+    return fetch(`${this.baseURL}/workouts`, config).then(res => res.json());
+  };
+  
   
 }
 

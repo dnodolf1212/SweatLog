@@ -6,6 +6,7 @@ class WorkoutBoard {
     this.workout = workout;
     this.renderWorkout();
     this.attachEventListener();
+    this.attachDeleteListener();
   }
 
   static getData(){
@@ -14,12 +15,15 @@ class WorkoutBoard {
   }
 
   attachEventListener(){
-    this.board.addEventListener("click", this.handleOnClick)
+    this.board.addEventListener("submit", this.handleOnClick)
   }
 
   handleOnClick = (event) => {
-    console.log(event.target)
-  }
+    event.preventDefault();
+    //const {sets_poses, distance, time, weight} = event.target
+    //const formData = new FormData()
+  }// data.append("name", "sets_reps");
+
 
   renderWorkout(){
     const board = document.createElement("div");
@@ -37,11 +41,31 @@ class WorkoutBoard {
     `
       ${currentDate} 
       <h2>${name}</h2>
-      <button class="count-btn" data-count-id="">Sets/Poses</button>
-      <button class="time-btn" data-time-id="">Total Time</button>
-      <button class="distance-btn" data-distance-id="">Distance</button>
+      <form id="detail-form">
+        <ul>
+          
+          <li><input name="sets_poses"> Sets/Poses</input></li>
+          <li><input name="distance"> Total Time</input></li>
+          <li><input name="time"> Distance</input></li>
+          <li><input name="weight"> Weight</input></li>
+          <li><input type="submit" value="submit" </input></li>
+        </ul>
+      </form>
       <p>Rating: ${rating}</p>
+      <button id="deleteBtn">Delete</button>
     `
+  }
+
+  attachDeleteListener(){
+    this.board.addEventListener("click", this.handleDeleteClick)
+  }
+
+  handleDeleteClick(event){
+    if (event.target.id == "deleteBtn"){
+      this.remove();
+    }
+    console.log(event.target);
+     //debugger;
   }
   
 

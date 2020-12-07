@@ -25,12 +25,12 @@ ActiveRecord::Schema.define(version: 2020_12_01_040447) do
     t.integer "weight"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+  #create_table "users", force: :cascade do |t|
+  #  t.string "username"
+  #  t.string "password"
+  #  t.datetime "created_at", precision: 6, null: false
+  #  t.datetime "updated_at", precision: 6, null: false
+  #end
 
   create_table "workouts", force: :cascade do |t|
     t.string "name"

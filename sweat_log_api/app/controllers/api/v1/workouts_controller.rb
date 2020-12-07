@@ -11,6 +11,11 @@ class Api::V1::WorkoutsController < ApplicationController
     render json: @workout, except: [:created_at, :updated_at], include: [:details]
   end
 
+  def destroy
+    @workout = Workout.find_by_id(params[:id])
+    @workout.destroy
+  end
+
   private 
 
   def workout_params
