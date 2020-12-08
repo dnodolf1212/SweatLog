@@ -20,10 +20,20 @@ class WorkoutBoard {
 
   handleOnClick = (event) => {
     event.preventDefault();
-    //const {sets_poses, distance, time, weight} = event.target
-    //const formData = new FormData()
-  }// data.append("name", "sets_reps");
-
+    console.log(event.target[0].value)
+    const sets_poses = event.target[0].value
+    const time = event.target[1].value
+    const distance = event.target[2].value
+    const weight = event.target[3].value
+    const detailData = {
+      sets_poses: sets_poses.value,
+      time: time.value,
+      distance: distance.value,
+      weight: weight.value
+    }
+    api.addDetail(detailData).then(res => console.log(res))
+   
+  }
 
   renderWorkout(){
     const board = document.createElement("div");
@@ -42,31 +52,31 @@ class WorkoutBoard {
       ${currentDate} 
       <h2>${name}</h2>
       <form id="detail-form">
-        <ul>
-          
-          <li><input name="sets_poses"> Sets/Poses</input></li>
-          <li><input name="distance"> Total Time</input></li>
-          <li><input name="time"> Distance</input></li>
-          <li><input name="weight"> Weight</input></li>
-          <li><input type="submit" value="submit" </input></li>
-        </ul>
+        <p><input type="text name="sets_poses" value=""> Sets/Poses</input></p> 
+        <p><input type="text name="distance" value=""> Total Time</input></p>
+        <p><input type="text name="time" value=""> Distance</input></p>
+        <p><input type="text name="weight" value=""> Weight</input></p>
+        <p><input type="submit" value="submit" </input></p>
       </form>
       <p>Rating: ${rating}</p>
       <button id="deleteBtn">Delete</button>
     `
   }
 
-  attachDeleteListener(){
-    this.board.addEventListener("click", this.handleDeleteClick)
+  attachDeleteListener = () => {
+    this.board.addEventListener("click", event => this.handleDeleteClick(event))
   }
 
-  handleDeleteClick(event){
+  handleDeleteClick = (event) => {
     if (event.target.id == "deleteBtn"){
-      this.remove();
-    }
-    console.log(event.target);
-     //debugger;
+      console.log(event.target)
+      const trashWorkout = event.target.parentElement.dataset.id; //is this the id of the individual workout???
+      const workoutDiv = event.target.parentElement;
+      api.removeWorkout(trashWorkout);
+      workoutDiv.remove()
+      } 
   }
+    
   
 
 }
