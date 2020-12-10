@@ -6,36 +6,36 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-workouts = [
-  {
-    "id": 1,
-    "name": "Running",
-    "rating": 4
-  },
-  {
-    "id": 2,
-    "name": "Lifting",
-    "rating": 8
-  },
-  {
-    "id": 3,
-    "name": "Walking",
-    "rating": 9
-  },
-  {
-    "id": 4,
-    "name": "Cycling",
-    "rating": 10
-  },
-  {
-    "id": 5,
-    "name": "Yoga",
-    "rating": 10
-  }
-]
-
-
-workouts.each do |workout|
-  Workout.create(name: workout[:name], rating: workout[:rating])
-end
+#workouts = [
+#  {
+#    "id": 1,
+#    "name": "Running",
+#    "rating": 4
+#  },
+#  {
+#    "id": 2,
+#    "name": "Lifting",
+#    "rating": 8
+#  },
+#  {
+#    "id": 3,
+#    "name": "Walking",
+#    "rating": 9
+#  },
+#  {
+#    "id": 4,
+#    "name": "Cycling",
+#    "rating": 10
+#  },
+#  {
+#    "id": 5,
+#    "name": "Yoga",
+#    "rating": 10
+#  }
+#]
+#
+#
+#workouts.each do |workout|
+#  Workout.create(name: workout[:name], rating: workout[:rating])
+#end
 

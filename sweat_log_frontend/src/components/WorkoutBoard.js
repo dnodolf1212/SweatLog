@@ -1,7 +1,7 @@
 class WorkoutBoard {
 
   static container = document.getElementById("container");
-  
+
   constructor(workout){
     this.workout = workout;
     this.renderWorkout();
@@ -15,24 +15,31 @@ class WorkoutBoard {
   }
 
   attachEventListener(){
-    this.board.addEventListener("submit", this.handleOnClick)
+    this.board.addEventListener("submit", this.handleOnSubmit)
   }
 
-  handleOnClick = (event) => {
+  handleOnSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target[0].value)
-    const sets_poses = event.target[0].value
-    const time = event.target[1].value
-    const distance = event.target[2].value
-    const weight = event.target[3].value
+    const formDiv = document.getElementById("detail-form")
+    formDiv.style.display = 'none'
+    const sets_poses = event.target.sets_poses.value
+    const time = event.target.time.value
+    const distance = event.target.distance.value
+    const weight = event.target.weight.value
     const detailData = {
-      sets_poses: sets_poses.value,
-      time: time.value,
-      distance: distance.value,
-      weight: weight.value
+      sets_poses,
+      time,
+      distance,
+      weight    
     }
-    api.addDetail(detailData).then(res => console.log(res))
-   
+    api.addDetail(detailData, this.workout.id).then(workoutDetail => this.updateDetails(workoutDetail))
+  }
+
+  updateDetails(workoutDetail){
+    console.log(workoutDetail);
+    debugger;
+    const detailsDiv = document.body.querySelector(".details[data-id]")
+    detailsDiv.innerHTML += this.detailHTML(workoutDetail)
   }
 
   renderWorkout(){
@@ -45,21 +52,40 @@ class WorkoutBoard {
   }
 
   renderInnerHTML(){
-    const {name, rating, } = this.workout;
-    const currentDate = new Date().toLocaleDateString();
-    this.board.innerHTML =
+    const { name, rating } = this.workout;
+    this.board.innerHTML = //document.getElementById("plug workout_id in here???")
     `
-      ${currentDate} 
       <h2>${name}</h2>
-      <form id="detail-form">
-        <p><input type="text name="sets_poses" value=""> Sets/Poses</input></p> 
-        <p><input type="text name="distance" value=""> Total Time</input></p>
-        <p><input type="text name="time" value=""> Distance</input></p>
-        <p><input type="text name="weight" value=""> Weight</input></p>
-        <p><input type="submit" value="submit" </input></p>
+      <div class='details' data-id="${this.workout_id}" > 
+        ${this.renderDetailsHTML()}
+      </div>
+      <form id="detail-form" onsubmit="document.getElementById('detail-form').style.display = 'none'">
+        <input type="text" name="sets_poses" value=""> Sets/Poses</input>
+        <input type="text" name="time" value="a string?"> Total Time</input>
+        <input type="text" name="distance" value="a sting?"> Distance</input>
+        <input type="text" name="weight" value=""> Weight</input>
+        <input type="submit" value="submit" </input>
       </form>
       <p>Rating: ${rating}</p>
       <button id="deleteBtn">Delete</button>
+    `
+  }
+
+  renderDetailsHTML(){
+    const html = this.workout.details.map(detail => {
+      return this.detailHTML(detail)
+    }).join("");
+    return html
+  }
+
+  detailHTML(detail){
+    const currentDate = new Date().toLocaleDateString();
+    return `
+    ${currentDate} 
+    <p>Sets/Poses:  ${detail.sets_poses}</p>
+    <p>Distance:  ${detail.distance} </p>
+    <p>Total Time:  ${detail.time} </p>
+    <p>Weight Lifted:  ${detail.weight} lbs./kgs.</p>
     `
   }
 
@@ -69,8 +95,7 @@ class WorkoutBoard {
 
   handleDeleteClick = (event) => {
     if (event.target.id == "deleteBtn"){
-      console.log(event.target)
-      const trashWorkout = event.target.parentElement.dataset.id; //is this the id of the individual workout???
+      const trashWorkout = event.target.parentElement.dataset.id; 
       const workoutDiv = event.target.parentElement;
       api.removeWorkout(trashWorkout);
       workoutDiv.remove()

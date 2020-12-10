@@ -12,12 +12,15 @@ class WorkoutForm {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
+    const workoutForm = document.getElementById("workout_form");
+   
     const {name, rating} = event.target; 
     const data = {
       name: name.value,
       rating: rating.value
     } 
-    api.addWorkout(data).then(workout =>  new WorkoutBoard(workout));
+    api.addWorkout(data).then(workout =>  new WorkoutBoard(workout)); 
+    workoutForm.reset();
   };
 
 }

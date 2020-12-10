@@ -1,14 +1,15 @@
 class Api::V1::DetailsController < ApplicationController
 
   def create 
-    @detail = Detail.create(detail_params)
+    @workout = Workout.find_by_id(params[:workout_id])
+    @detail = @workout.details.create(detail_params)
     render json: @detail
   end
 
   private 
 
   def detail_params
-    params.require(:detail).permit(:workout_id, :sets_poses, :time, :distance, :weight)
+    params.require(:detail).permit(:workout_id, :sets_poses, :distance, :time, :weight)
   end
 
 end
