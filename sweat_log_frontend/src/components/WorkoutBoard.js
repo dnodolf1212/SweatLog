@@ -37,26 +37,28 @@ class WorkoutBoard {
 
   updateDetails(workoutDetail){
     console.log(workoutDetail);
-    debugger;
-    const detailsDiv = document.body.querySelector(".details[data-id]")
-    detailsDiv.innerHTML += this.detailHTML(workoutDetail)
+    //getAttribute??
+    const detailsDiv = document.querySelector(`.details[id="${this.workout.id}"]`); 
+    detailsDiv.innerHTML = this.detailHTML(workoutDetail);
+     debugger;
   }
 
   renderWorkout(){
     const board = document.createElement("div");
+    console.log(board)
     board.className = "workout";
-    board.dataset.id = this.workout.id
+    board.dataset.id = this.workout.id;
     this.board = board; 
-    this.renderInnerHTML()
+    this.renderInnerHTML();
     this.constructor.container.append(board);
   }
 
   renderInnerHTML(){
     const { name, rating } = this.workout;
-    this.board.innerHTML = //document.getElementById("plug workout_id in here???")
-    `
+    this.board.innerHTML = 
+    `                                    
       <h2>${name}</h2>
-      <div class='details' data-id="${this.workout_id}" > 
+      <div class='details' id="${this.workout.id}"> 
         ${this.renderDetailsHTML()}
       </div>
       <form id="detail-form" onsubmit="document.getElementById('detail-form').style.display = 'none'">
@@ -75,7 +77,9 @@ class WorkoutBoard {
     const html = this.workout.details.map(detail => {
       return this.detailHTML(detail)
     }).join("");
+    console.log (html)
     return html
+    
   }
 
   detailHTML(detail){
