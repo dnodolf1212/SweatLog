@@ -20,8 +20,8 @@ class WorkoutBoard {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    const formDiv = document.getElementById("detail-form")
-    formDiv.style.display = 'none'
+    const formDiv = document.querySelector(`.detail-form[id="${this.workout.id}"]`);
+    
     const sets_poses = event.target.sets_poses.value
     const time = event.target.time.value
     const distance = event.target.distance.value
@@ -30,14 +30,14 @@ class WorkoutBoard {
       sets_poses,
       time,
       distance,
-      weight    
+      weight 
     }
+    formDiv.remove();   
     api.addDetail(detailData, this.workout.id).then(workoutDetail => this.updateDetails(workoutDetail))
   }
 
   updateDetails(workoutDetail){
     console.log(workoutDetail);
-    //getAttribute??
     const detailsDiv = document.querySelector(`.details[id="${this.workout.id}"]`); 
     detailsDiv.innerHTML = this.detailHTML(workoutDetail);
      debugger;
@@ -61,7 +61,7 @@ class WorkoutBoard {
       <div class='details' id="${this.workout.id}"> 
         ${this.renderDetailsHTML()}
       </div>
-      <form id="detail-form" onsubmit="document.getElementById('detail-form').style.display = 'none'">
+      <form class="detail-form" id="${this.workout.id}" onsubmit="document.getElementById('detail-form').style.display = 'none'">
         <input type="text" name="sets_poses" value=""> Sets/Poses</input>
         <input type="text" name="time" value="a string?"> Total Time</input>
         <input type="text" name="distance" value="a sting?"> Distance</input>

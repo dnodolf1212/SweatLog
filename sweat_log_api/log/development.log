@@ -34607,3 +34607,615 @@ Processing by Api::V1::WorkoutsController#index as */*
 Completed 200 OK in 34ms (Views: 26.1ms | ActiveRecord: 2.5ms | Allocations: 6672)
 
 
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:27:01 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (7.8ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 54]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.7ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 55]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 12.7ms | ActiveRecord: 11.1ms | Allocations: 6670)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:27:20 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (1.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (4.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 54]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 55]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 12.5ms | ActiveRecord: 6.9ms | Allocations: 6653)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:27:22 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 54]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (1.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 55]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 2.5ms | Allocations: 6653)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:27:32 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 54]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 55]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 2.6ms | Allocations: 6657)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:27:39 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 54]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.8ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 55]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 2.3ms | Allocations: 6653)
+
+
+Started DELETE "/api/v1/workouts/55" for ::1 at 2020-12-14 22:27:42 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"55"}
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (2.5ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 55]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (15.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 26ms (ActiveRecord: 18.5ms | Allocations: 2668)
+
+
+Started DELETE "/api/v1/workouts/54" for ::1 at 2020-12-14 22:27:44 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"54"}
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 54]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 2.0ms | Allocations: 2441)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:28:10 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"test", "rating"=>"10", "workout"=>{"name"=>"test", "rating"=>"10"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (1.1ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-12-15 06:28:10.552537"], ["updated_at", "2020-12-15 06:28:10.552537"], ["rating", 10]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 49ms (Views: 1.8ms | ActiveRecord: 42.1ms | Allocations: 3726)
+
+
+Started POST "/api/v1/workouts/56/details" for ::1 at 2020-12-14 22:28:17 -0800
+Processing by Api::V1::DetailsController#create as JSON
+  Parameters: {"sets_poses"=>"22", "time"=>"a string?", "distance"=>"a sting?", "weight"=>"45", "workout_id"=>"56", "detail"=>{"sets_poses"=>"22", "distance"=>"a sting?", "time"=>"a string?", "weight"=>"45"}}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/details_controller.rb:4:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[36mDetail Create (40.8ms)[0m  [1m[32mINSERT INTO "details" ("workout_id", "sets_poses", "distance", "time", "created_at", "updated_at", "weight") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["workout_id", 56], ["sets_poses", 22], ["distance", "a sting?"], ["time", "a string?"], ["created_at", "2020-12-15 06:28:17.330259"], ["updated_at", "2020-12-15 06:28:17.330259"], ["weight", 45]]
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+Completed 200 OK in 49ms (Views: 0.5ms | ActiveRecord: 41.8ms | Allocations: 3704)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:31:59 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.6ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 98ms (Views: 62.2ms | ActiveRecord: 12.2ms | Allocations: 19611)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:36:35 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"bike ride", "rating"=>"10", "workout"=>{"name"=>"bike ride", "rating"=>"10"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (2.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bike ride"], ["created_at", "2020-12-15 06:36:35.594735"], ["updated_at", "2020-12-15 06:36:35.594735"], ["rating", 10]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (19.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (1.7ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 51ms (Views: 7.5ms | ActiveRecord: 24.2ms | Allocations: 3761)
+
+
+Started POST "/api/v1/workouts/57/details" for ::1 at 2020-12-14 22:36:56 -0800
+Processing by Api::V1::DetailsController#create as JSON
+  Parameters: {"sets_poses"=>"0", "time"=>"a string?", "distance"=>"rull farr", "weight"=>"0", "workout_id"=>"57", "detail"=>{"sets_poses"=>"0", "distance"=>"rull farr", "time"=>"a string?", "weight"=>"0"}}
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/details_controller.rb:4:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[36mDetail Create (0.8ms)[0m  [1m[32mINSERT INTO "details" ("workout_id", "sets_poses", "distance", "time", "created_at", "updated_at", "weight") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["workout_id", 57], ["sets_poses", 0], ["distance", "rull farr"], ["time", "a string?"], ["created_at", "2020-12-15 06:36:56.646629"], ["updated_at", "2020-12-15 06:36:56.646629"], ["weight", 0]]
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+Completed 200 OK in 55ms (Views: 0.7ms | ActiveRecord: 41.7ms | Allocations: 3906)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:37:11 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (2.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.6ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (1.1ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (5.1ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 13.9ms | ActiveRecord: 9.6ms | Allocations: 6960)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:37:37 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (2.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.7ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (1.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (4.8ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 84ms (Views: 73.7ms | ActiveRecord: 9.7ms | Allocations: 6963)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:37:45 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"swimming", "rating"=>"1000", "workout"=>{"name"=>"swimming", "rating"=>"1000"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (30.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "swimming"], ["created_at", "2020-12-15 06:37:45.574320"], ["updated_at", "2020-12-15 06:37:45.574320"], ["rating", 1000]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 58]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 38ms (Views: 2.1ms | ActiveRecord: 31.7ms | Allocations: 3485)
+
+
+Started POST "/api/v1/workouts/58/details" for ::1 at 2020-12-14 22:37:53 -0800
+Processing by Api::V1::DetailsController#create as JSON
+  Parameters: {"sets_poses"=>"22", "time"=>"a string?", "distance"=>"a sting?", "weight"=>"45", "workout_id"=>"58", "detail"=>{"sets_poses"=>"22", "distance"=>"a sting?", "time"=>"a string?", "weight"=>"45"}}
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/details_controller.rb:4:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[36mDetail Create (0.6ms)[0m  [1m[32mINSERT INTO "details" ("workout_id", "sets_poses", "distance", "time", "created_at", "updated_at", "weight") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["workout_id", 58], ["sets_poses", 22], ["distance", "a sting?"], ["time", "a string?"], ["created_at", "2020-12-15 06:37:53.856811"], ["updated_at", "2020-12-15 06:37:53.856811"], ["weight", 45]]
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+Completed 200 OK in 57ms (Views: 0.4ms | ActiveRecord: 42.1ms | Allocations: 3621)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:45:45 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.6ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.6ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 58]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 33.2ms | ActiveRecord: 4.4ms | Allocations: 8266)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:45:57 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"swimming", "rating"=>"1000", "workout"=>{"name"=>"swimming", "rating"=>"1000"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (1.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "swimming"], ["created_at", "2020-12-15 06:45:57.047915"], ["updated_at", "2020-12-15 06:45:57.047915"], ["rating", 1000]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (25.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 59]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 41ms (Views: 2.6ms | ActiveRecord: 27.5ms | Allocations: 3485)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:46:32 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (5.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (5.1ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (1.1ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (5.0ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (22.0ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (5.8ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 58]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (11.1ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 59]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 76ms (Views: 20.1ms | ActiveRecord: 55.8ms | Allocations: 9243)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:46:40 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (14.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.7ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (12.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (8.9ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 58]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (9.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 59]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 67ms (Views: 19.9ms | ActiveRecord: 47.2ms | Allocations: 9243)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:46:50 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"walking", "rating"=>"2", "workout"=>{"name"=>"walking", "rating"=>"2"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (1.5ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "walking"], ["created_at", "2020-12-15 06:46:50.222348"], ["updated_at", "2020-12-15 06:46:50.222348"], ["rating", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 60]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 50ms (Views: 2.2ms | ActiveRecord: 43.1ms | Allocations: 3481)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:47:59 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.4ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 58]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 59]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 60]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 184ms (Views: 148.2ms | ActiveRecord: 12.4ms | Allocations: 24215)
+
+
+Started DELETE "/api/v1/workouts/60" for ::1 at 2020-12-14 22:49:14 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"60"}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.8ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 60]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 30ms (ActiveRecord: 23.9ms | Allocations: 2685)
+
+
+Started DELETE "/api/v1/workouts/59" for ::1 at 2020-12-14 22:49:15 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"59"}
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 59]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 3.3ms | Allocations: 2458)
+
+
+Started DELETE "/api/v1/workouts/58" for ::1 at 2020-12-14 22:49:19 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"58"}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.6ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 58]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms | Allocations: 2458)
+
+
+Started DELETE "/api/v1/workouts/57" for ::1 at 2020-12-14 22:49:20 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"57"}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (17.0ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 57]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 23ms (ActiveRecord: 18.3ms | Allocations: 2458)
+
+
+Started DELETE "/api/v1/workouts/56" for ::1 at 2020-12-14 22:49:21 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"56"}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.8ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 56]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 2.4ms | Allocations: 2441)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:49:29 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"walking", "rating"=>"2", "workout"=>{"name"=>"walking", "rating"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (1.1ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "walking"], ["created_at", "2020-12-15 06:49:29.871650"], ["updated_at", "2020-12-15 06:49:29.871650"], ["rating", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 61]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 72ms (Views: 23.6ms | ActiveRecord: 42.0ms | Allocations: 3724)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:49:57 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (13.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (1.1ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.6ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 61]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 8.7ms | ActiveRecord: 15.3ms | Allocations: 5577)
+
+
+Started DELETE "/api/v1/workouts/61" for ::1 at 2020-12-14 22:50:01 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"61"}
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.9ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 61]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 2.3ms | Allocations: 2441)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:50:14 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"pilates", "rating"=>"10", "workout"=>{"name"=>"pilates", "rating"=>"10"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "pilates"], ["created_at", "2020-12-15 06:50:14.796140"], ["updated_at", "2020-12-15 06:50:14.796140"], ["rating", 10]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (40.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 62]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 47ms (Views: 1.6ms | ActiveRecord: 41.6ms | Allocations: 3486)
+
+
+Started DELETE "/api/v1/workouts/62" for ::1 at 2020-12-14 22:51:43 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"62"}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 62]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (221.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 226ms (ActiveRecord: 222.0ms | Allocations: 2441)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-12-14 22:51:48 -0800
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (6.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 41]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.3ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 52]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 7.5ms | ActiveRecord: 8.1ms | Allocations: 4494)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:51:56 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"walking", "rating"=>"2", "workout"=>{"name"=>"walking", "rating"=>"2"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "walking"], ["created_at", "2020-12-15 06:51:56.307116"], ["updated_at", "2020-12-15 06:51:56.307116"], ["rating", 2]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 63]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 48ms (Views: 1.7ms | ActiveRecord: 42.1ms | Allocations: 3483)
+
+
+Started POST "/api/v1/workouts/63/details" for ::1 at 2020-12-14 22:52:02 -0800
+Processing by Api::V1::DetailsController#create as JSON
+  Parameters: {"sets_poses"=>"100", "time"=>"a string?", "distance"=>"a sting?", "weight"=>"1111", "workout_id"=>"63", "detail"=>{"sets_poses"=>"100", "distance"=>"a sting?", "time"=>"a string?", "weight"=>"1111"}}
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/details_controller.rb:4:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[36mDetail Create (0.6ms)[0m  [1m[32mINSERT INTO "details" ("workout_id", "sets_poses", "distance", "time", "created_at", "updated_at", "weight") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["workout_id", 63], ["sets_poses", 100], ["distance", "a sting?"], ["time", "a string?"], ["created_at", "2020-12-15 06:52:02.227101"], ["updated_at", "2020-12-15 06:52:02.227101"], ["weight", 1111]]
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+Completed 200 OK in 48ms (Views: 0.4ms | ActiveRecord: 41.3ms | Allocations: 3704)
+
+
+Started POST "/api/v1/workouts" for ::1 at 2020-12-14 22:52:16 -0800
+Processing by Api::V1::WorkoutsController#create as JSON
+  Parameters: {"name"=>"swimming", "rating"=>"10", "workout"=>{"name"=>"swimming", "rating"=>"10"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "created_at", "updated_at", "rating") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "swimming"], ["created_at", "2020-12-15 06:52:16.601540"], ["updated_at", "2020-12-15 06:52:16.601540"], ["rating", 10]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:10:in `create'
+  [1m[36mDetail Load (0.2ms)[0m  [1m[34mSELECT "details".* FROM "details" WHERE "details"."workout_id" = $1[0m  [["workout_id", 64]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:11:in `create'
+Completed 200 OK in 47ms (Views: 1.9ms | ActiveRecord: 41.5ms | Allocations: 3481)
+
+
+Started POST "/api/v1/workouts/64/details" for ::1 at 2020-12-14 22:52:24 -0800
+Processing by Api::V1::DetailsController#create as JSON
+  Parameters: {"sets_poses"=>"22", "time"=>"a string?", "distance"=>"a sting?", "weight"=>"0", "workout_id"=>"64", "detail"=>{"sets_poses"=>"22", "distance"=>"a sting?", "time"=>"a string?", "weight"=>"0"}}
+  [1m[36mWorkout Load (1.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/details_controller.rb:4:in `create'
+  [1m[35m (8.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[36mDetail Create (1.2ms)[0m  [1m[32mINSERT INTO "details" ("workout_id", "sets_poses", "distance", "time", "created_at", "updated_at", "weight") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["workout_id", 64], ["sets_poses", 22], ["distance", "a sting?"], ["time", "a string?"], ["created_at", "2020-12-15 06:52:24.602446"], ["updated_at", "2020-12-15 06:52:24.602446"], ["weight", 0]]
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/details_controller.rb:5:in `create'
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 12.4ms | Allocations: 3624)
+
+
+Started DELETE "/api/v1/workouts/64" for ::1 at 2020-12-14 22:52:33 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"64"}
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 64]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 45ms (ActiveRecord: 41.4ms | Allocations: 2441)
+
+
+Started DELETE "/api/v1/workouts/63" for ::1 at 2020-12-14 22:52:34 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"63"}
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 63]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 1.4ms | Allocations: 2441)
+
+
+Started DELETE "/api/v1/workouts/53" for ::1 at 2020-12-14 22:57:22 -0800
+Processing by Api::V1::WorkoutsController#destroy as */*
+  Parameters: {"id"=>"53"}
+  [1m[36mWorkout Load (1.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:15:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[36mWorkout Destroy (0.6ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 53]]
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:16:in `destroy'
+Completed 204 No Content in 56ms (ActiveRecord: 42.9ms | Allocations: 2444)
+
+
