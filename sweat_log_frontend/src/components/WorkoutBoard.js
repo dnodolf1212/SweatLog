@@ -79,19 +79,19 @@ class WorkoutBoard {
     const html = this.workout.details.map(detail => {
       return this.detailHTML(detail)
     }).join("");
-    console.log (html)
     return html
     
   }
 
   detailHTML(detail){
-    const currentDate = new Date().toLocaleDateString();
     return `
     ${this.workout.created_at}
     <p>Sets/Poses:  ${detail.sets_poses}</p>
     <p>Distance:  ${detail.distance} </p>
     <p>Total Time:  ${detail.time} </p>
     <p>Weight Lifted:  ${detail.weight} lbs./kgs.</p>
+
+    
     `
   }
 
