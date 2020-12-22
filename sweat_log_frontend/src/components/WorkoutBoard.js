@@ -85,13 +85,11 @@ class WorkoutBoard {
 
   detailHTML(detail){
     return `
-    ${this.workout.created_at}
+    <h3>Date/Time: ${detail.created_at}</h3>
     <p>Sets/Poses:  ${detail.sets_poses}</p>
     <p>Distance:  ${detail.distance} </p>
     <p>Total Time:  ${detail.time} </p>
     <p>Weight Lifted:  ${detail.weight} lbs./kgs.</p>
-
-    
     `
   }
 
