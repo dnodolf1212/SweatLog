@@ -32,14 +32,14 @@ class WorkoutBoard {
       distance,
       weight 
     }
-    formDiv.remove();   
+    formDiv.style.display = "none";   
     api.addDetail(detailData, this.workout.id).then(workoutDetail => this.updateDetails(workoutDetail))
   }
 
   updateDetails(workoutDetail){
     console.log(workoutDetail);
     const detailsDiv = document.querySelector(`.details[id="${this.workout.id}"]`); 
-    detailsDiv.innerHTML = this.detailHTML(workoutDetail);
+    detailsDiv.innerHTML += this.detailHTML(workoutDetail);
      debugger;
   }
 
@@ -56,12 +56,13 @@ class WorkoutBoard {
   renderInnerHTML(){
     const { name, rating } = this.workout;
     this.board.innerHTML = 
-    `                                    
+    `  
+
       <h2>${name}</h2>
       <div class='details' id="${this.workout.id}"> 
         ${this.renderDetailsHTML()}
       </div>
-      <form class="detail-form" id="${this.workout.id}" onsubmit="document.getElementById('detail-form').style.display = 'none'">
+      <form class="detail-form" id="${this.workout.id}" style="display: none">
         <input type="text" name="sets_poses" value=""> Sets/Poses</input>
         <input type="text" name="time" value="a string?"> Total Time</input>
         <input type="text" name="distance" value="a sting?"> Distance</input>
@@ -69,7 +70,8 @@ class WorkoutBoard {
         <input type="submit" value="submit" </input>
       </form>
       <p>Rating: ${rating}</p>
-      <button id="deleteBtn">Delete</button>
+      <button class="deleteBtn">Delete</button>
+      <button class="toggle">log workout</button>
     `
   }
 
@@ -85,7 +87,7 @@ class WorkoutBoard {
   detailHTML(detail){
     const currentDate = new Date().toLocaleDateString();
     return `
-    ${currentDate} 
+    ${this.workout.created_at}
     <p>Sets/Poses:  ${detail.sets_poses}</p>
     <p>Distance:  ${detail.distance} </p>
     <p>Total Time:  ${detail.time} </p>
@@ -94,16 +96,24 @@ class WorkoutBoard {
   }
 
   attachDeleteListener = () => {
-    this.board.addEventListener("click", event => this.handleDeleteClick(event))
+    this.board.addEventListener("click", event => this.handleClick(event))
   }
 
-  handleDeleteClick = (event) => {
-    if (event.target.id == "deleteBtn"){
+  handleClick = (event) => {
+    if (event.target.className == "deleteBtn"){
       const trashWorkout = event.target.parentElement.dataset.id; 
       const workoutDiv = event.target.parentElement;
       api.removeWorkout(trashWorkout);
       workoutDiv.remove()
       } 
+      if (event.target.className == "toggle") 
+      {
+        const detailsForm = document.querySelector(`.detail-form[id="${this.workout.id}"]`);
+        console.log(detailsForm)
+        detailsForm.style.display = "block";
+      }
+        
+      
   }
     
   

@@ -8,7 +8,7 @@ class Api::V1::WorkoutsController < ApplicationController
 
   def create 
     @workout = Workout.create(workout_params)
-    render json: @workout, except: [:created_at, :updated_at], include: [:details]
+    render json: @workout, except: [:updated_at], include: [:details]
   end
 
   def destroy
@@ -19,7 +19,7 @@ class Api::V1::WorkoutsController < ApplicationController
   private 
 
   def workout_params
-    params.require(:workout).permit(:name, :rating, details: [:sets_poses, :distance, :time, :weight])
+    params.require(:workout).permit(:name, :rating, :current_date, details: [:sets_poses, :distance, :time, :weight])
   end
 
 end 
