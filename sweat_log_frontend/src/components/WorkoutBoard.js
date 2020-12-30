@@ -1,9 +1,11 @@
 class WorkoutBoard {
 
   static container = document.getElementById("container");
+  static all = []
 
   constructor(workout){
     this.workout = workout;
+    WorkoutBoard.all.push(this);
     this.renderWorkout();
     this.attachEventListener();
     this.attachDeleteListener();
@@ -14,6 +16,36 @@ class WorkoutBoard {
       data.forEach(workout => new WorkoutBoard(workout)));
   }
 
+  renderWorkout(){
+    const board = document.createElement("div");
+    board.className = "workout";
+    board.dataset.id = this.workout.id;
+    this.board = board; 
+    this.renderInnerHTML();
+    this.constructor.container.append(board);
+  }
+
+  renderInnerHTML(){
+    const { name, rating } = this.workout;
+    this.board.innerHTML = 
+    `  
+      <h2>${name}</h2>
+      <div class='details' id="${this.workout.id}"> 
+        ${this.renderDetailsHTML()}
+      </div>
+      <form class="detail-form" id="${this.workout.id}" style="display: none">
+        <input type="text" name="sets_poses" value=""> Sets/Poses</input>
+        <input type="text" name="time" value="a string?"> Total Time</input>
+        <input type="text" name="distance" value="a sting?"> Distance</input>
+        <input type="text" name="weight" value=""> Weight</input>
+        <input type="submit" value="submit" </input>
+      </form>
+      <p>Rating: ${rating}</p>
+      <button class="deleteBtn">Delete</button>
+      <button class="toggle">log workout</button>
+    `
+  }
+  
   attachEventListener(){
     this.board.addEventListener("submit", this.handleOnSubmit)
   }
@@ -40,39 +72,6 @@ class WorkoutBoard {
     console.log(workoutDetail);
     const detailsDiv = document.querySelector(`.details[id="${this.workout.id}"]`); 
     detailsDiv.innerHTML += this.detailHTML(workoutDetail);
-     debugger;
-  }
-
-  renderWorkout(){
-    const board = document.createElement("div");
-    console.log(board)
-    board.className = "workout";
-    board.dataset.id = this.workout.id;
-    this.board = board; 
-    this.renderInnerHTML();
-    this.constructor.container.append(board);
-  }
-
-  renderInnerHTML(){
-    const { name, rating } = this.workout;
-    this.board.innerHTML = 
-    `  
-
-      <h2>${name}</h2>
-      <div class='details' id="${this.workout.id}"> 
-        ${this.renderDetailsHTML()}
-      </div>
-      <form class="detail-form" id="${this.workout.id}" style="display: none">
-        <input type="text" name="sets_poses" value=""> Sets/Poses</input>
-        <input type="text" name="time" value="a string?"> Total Time</input>
-        <input type="text" name="distance" value="a sting?"> Distance</input>
-        <input type="text" name="weight" value=""> Weight</input>
-        <input type="submit" value="submit" </input>
-      </form>
-      <p>Rating: ${rating}</p>
-      <button class="deleteBtn">Delete</button>
-      <button class="toggle">log workout</button>
-    `
   }
 
   renderDetailsHTML(){
@@ -80,7 +79,6 @@ class WorkoutBoard {
       return this.detailHTML(detail)
     }).join("");
     return html
-    
   }
 
   detailHTML(detail){
@@ -107,13 +105,8 @@ class WorkoutBoard {
       if (event.target.className == "toggle") 
       {
         const detailsForm = document.querySelector(`.detail-form[id="${this.workout.id}"]`);
-        console.log(detailsForm)
         detailsForm.style.display = "block";
       }
-        
-      
   }
-    
-  
 
 }

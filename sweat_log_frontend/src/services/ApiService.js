@@ -36,6 +36,13 @@ class ApiService {
     .then(res => res.json)
     .catch(error => console.error(error))
   };
+
+  //getSearch = (newList) => {
+  //  fetch(`${this.baseURL}/workouts/${newList}`, { method: "PATCH"})
+  //  .then(res => res.json)
+  //}
+
+
 }
 
  
